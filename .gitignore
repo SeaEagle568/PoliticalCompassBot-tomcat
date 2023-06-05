@@ -1,0 +1,5 @@
+/TestProject/
+.idea
+PoliticalCompassBot/.idea
+PoliticalCompassBot/*.log
+PoliticalCompassBot/*.iml

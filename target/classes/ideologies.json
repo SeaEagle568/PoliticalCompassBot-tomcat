@@ -1,0 +1,435 @@
+[
+  {
+    "name":"Радикальний центризм",
+    "coords":
+    {
+      "first":50.0,
+      "second":50.0
+    },
+    "link": "https://uk.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Ліберальний центризм",
+    "coords":
+    {
+      "first":58.4,
+      "second":58.4
+    },
+    "link": "https://uk.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Нео-лібералізм",
+    "coords":
+    {
+      "first":67.0,
+      "second":67.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BE%D0%BB%D1%96%D0%B1%D0%B5%D1%80%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Классичний лібералізм",
+    "coords":
+    {
+      "first":75.0,
+      "second":75.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B0%D1%81%D0%B8%D1%87%D0%BD%D0%B8%D0%B9_%D0%BB%D1%96%D0%B1%D0%B5%D1%80%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Мінархізм",
+    "coords":
+    {
+      "first":85.0,
+      "second":80.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BE%D0%BB%D1%96%D0%B1%D0%B5%D1%80%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Націонал-лібертарність",
+    "coords":
+    {
+      "first":90.0,
+      "second":74.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%27%D1%94%D0%BA%D1%82%D0%B8%D0%B2%D1%96%D0%B7%D0%BC_(%D0%90%D0%B9%D0%BD_%D0%A0%D0%B5%D0%BD%D0%B4)"
+  },
+  {
+    "name":"Лібертаріанський консерватизм",
+    "coords":
+    {
+      "first":95.0,
+      "second":60.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BB%D0%B5%D0%BE%D0%BB%D0%B8%D0%B1%D0%B5%D1%80%D1%82%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE"
+  },
+  {
+    "name":"Право-лібертарність",
+    "coords":
+    {
+      "first":80.0,
+      "second":80.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D0%B5_%D0%BB%D0%B8%D0%B1%D0%B5%D1%80%D1%82%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE"
+  },
+  {
+    "name":"Джорджизм",
+    "coords":
+    {
+      "first":60.0,
+      "second":86.5
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B6%D0%B8%D0%B7%D0%BC"
+
+  },
+  {
+    "name":"Анархізм вільного ринку",
+    "coords":
+    {
+      "first":67.0,
+      "second":95.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D1%80%D1%85%D1%96%D0%B7%D0%BC_%D0%B2%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D1%80%D0%B8%D0%BD%D0%BA%D1%83"
+  },
+  {
+    "name":"Анархо-егоїзм",
+    "coords":
+    {
+      "first":50.0,
+      "second":100.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D1%80%D1%85%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Лібертарний республіканізм",
+    "coords":
+    {
+      "first":87.0,
+      "second":90.0
+    },
+    "link" : "https://t.me/repcentre"
+  },
+  {
+    "name":"Анархо-капіталізм",
+    "coords":
+    {
+      "first":100.0,
+      "second":100.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D1%80%D1%85%D0%BE-%D0%BA%D0%B0%D0%BF%D1%96%D1%82%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Хоппеанство",
+    "coords":
+    {
+      "first":95.0,
+      "second":75.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BD%D1%81-%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD_%D0%93%D0%BE%D0%BF%D0%BF%D0%B5"
+  },
+  {
+    "name":"Мютюелізм",
+    "coords":
+    {
+      "first":42.0,
+      "second":92.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%9C%D1%8E%D1%82%D1%8E%D1%8D%D0%BB%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Анархо-синдикалізм",
+    "coords":
+    {
+      "first":20.0,
+      "second":97.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D1%80%D1%85%D0%BE-%D1%81%D0%B8%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Анархо-коммунізм",
+    "coords":
+    {
+      "first":0.0,
+      "second":100.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D1%80%D1%85%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Лібертарний соціалізм",
+    "coords":
+    {
+      "first":25.0,
+      "second":75.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9B%D1%96%D0%B1%D0%B5%D1%80%D1%82%D0%B0%D1%80%D0%BD%D0%B8%D0%B9_%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Ліве лібертаріанство",
+    "coords":
+    {
+      "first":41.0,
+      "second":82.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B2%D0%BE%D0%B5_%D0%BB%D0%B8%D0%B1%D0%B5%D1%80%D1%82%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE"
+  },
+  {
+    "name":"Утопічний соціалізм",
+    "coords":
+    {
+      "first":15.0,
+      "second":82.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A3%D1%82%D0%BE%D0%BF%D1%96%D0%B9%D0%BD%D0%B8%D0%B9_%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Классичний марксизм",
+    "coords":
+    {
+      "first":8.0,
+      "second":60.0
+    },
+    "link" : "https://ru.qaz.wiki/wiki/Classical_Marxism"
+  },
+  {
+    "name":"Демократичний соціалізм",
+    "coords":
+    {
+      "first":20.0,
+      "second":55.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9_%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Соціал-демократія",
+    "coords":
+    {
+      "first":30.0,
+      "second":63.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D1%86%D1%96%D0%B0%D0%BB-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D1%96%D1%8F"
+  },
+  {
+    "name":"Соціальний лібералізм",
+    "coords":
+    {
+      "first":42.0,
+      "second":63.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D1%86%D1%96%D0%B0%D0%BB-%D0%BB%D1%96%D0%B1%D0%B5%D1%80%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Лівий популізм",
+    "coords":
+    {
+      "first":41.7,
+      "second":41.7
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9B%D1%96%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Правий популізм",
+    "coords":
+    {
+      "first":58.3,
+      "second":41.7
+    },
+    "link" : "https://medium.com/rlntoday/rightwing-rothbard-81040e83fc8c"
+  },
+  {
+    "name":"Соціалізм рад",
+    "coords":
+    {
+      "first":25.0,
+      "second":38.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Троцькізм",
+    "coords":
+    {
+      "first":8.0,
+      "second":42.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D1%86%D1%8C%D0%BA%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Ортодоксальний марксизм",
+    "coords":
+    {
+      "first":8.0,
+      "second":32.0
+    },
+    "link" : "https://ru.qaz.wiki/wiki/Orthodox_Marxism"
+  },
+  {
+    "name":"Ленінізм",
+    "coords":
+    {
+      "first":10.0,
+      "second":25.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D1%96%D0%BD%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Державний соціалізм",
+    "coords":
+    {
+      "first":25.0,
+      "second":25.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%BD%D0%B8%D0%B9_%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Лейборизм",
+    "coords":
+    {
+      "first":30.0,
+      "second":35.0
+    },
+    "link" : "http://ponjatija.ru/taxonomy/term/3229"
+  },
+  {
+    "name":"Держаний капіталізм",
+    "coords":
+    {
+      "first":55.0,
+      "second":25.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BA%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Штрассеризм",
+    "coords":
+    {
+      "first":38.5,
+      "second":5.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%80%D0%B0%D1%81%D1%81%D0%B5%D1%80%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Націонал-більшовизм",
+    "coords":
+    {
+      "first": 25,
+      "second": 5.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB-%D0%B1%D1%96%D0%BB%D1%8C%D1%88%D0%BE%D0%B2%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Сталінізм",
+    "coords":
+    {
+      "first":5.0,
+      "second":1.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D1%96%D0%BD%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Більшовизм",
+    "coords":
+    {
+      "first":5.0,
+      "second":13.0
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%BE%D0%B2%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Ультра авторитаризм",
+    "coords":
+    {
+      "first":50.0,
+      "second":0.0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B0%D1%80%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Фашизм",
+    "coords":
+    {
+      "first":66,
+      "second":18
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D1%96%D1%8F"
+  },
+  {
+    "name":"Право-авторитаризм",
+    "coords":
+    {
+      "first":75,
+      "second":5
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A4%D0%B0%D1%88%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Монархія",
+    "coords":
+    {
+      "first":75,
+      "second":20
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%B0%D1%80%D1%85%D1%96%D1%8F"
+  },
+  {
+    "name":"Классичний консерватизм",
+    "coords":
+    {
+      "first":75,
+      "second":32
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Корпоративізм",
+    "coords":
+    {
+      "first":75,
+      "second":40
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Нео-реакція",
+    "coords":
+    {
+      "first":90,
+      "second":37
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BE%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5"
+  },
+  {
+    "name":"Нео-консерватизм",
+    "coords":
+    {
+      "first":86,
+      "second":31
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%B8%D0%B7%D0%BC"
+  },
+  {
+    "name":"Феодалізм",
+    "coords":
+    {
+      "first":88,
+      "second":22
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A4%D0%B5%D0%BE%D0%B4%D0%B0%D0%BB%D1%96%D0%B7%D0%BC"
+  },
+  {
+    "name":"Третій шлях",
+    "coords":
+    {
+      "first":58,
+      "second":25
+    },
+    "link" : "https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%82%D1%96%D0%B9_%D1%88%D0%BB%D1%8F%D1%85_(%D1%96%D0%B4%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F)"
+  },
+  {
+    "name":"Ультраімперіалізм",
+    "coords":
+    {
+      "first":95,
+      "second":0
+    },
+    "link" : "https://ru.wikipedia.org/wiki/%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC"
+  }
+]

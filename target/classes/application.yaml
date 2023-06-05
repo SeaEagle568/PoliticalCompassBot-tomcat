@@ -1,0 +1,22 @@
+bot:
+  name: ${BOT_NAME}
+  token: ${BOT_TOKEN}
+  devChatId: ${DEV_CHATID}
+  resources:
+    greeting: "greeting.txt"
+    questions: "questions.json"
+    image: "compass.png"
+    social-url: "https://docs.google.com/forms/d/e/1FAIpQLSfaHGyZ_gWNPMl0JMDPjLRvXdRorHadNAJSXEglSmGGu1G95A/viewform?usp=pp_url&entry.1626607362="
+    ideologies: "ideologies.json"
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/polcompbot
+    username: postgres
+    password: ${STANDWUKRAINE_DATABASE_PASSWORD}
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
