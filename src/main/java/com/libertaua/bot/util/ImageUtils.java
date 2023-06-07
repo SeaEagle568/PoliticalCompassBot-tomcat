@@ -140,6 +140,7 @@ public class ImageUtils {
         }
         else return null;
         File tempFile = new File("tempImage.png");
+        System.err.println("TempFile is going to be created at " + tempFile.getAbsolutePath());
         try {
             ImageIO.write(achievment, "png", tempFile);
         } catch (IOException e) {
