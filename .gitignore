@@ -1,5 +1,6 @@
 /TestProject/
 .idea
+target
 PoliticalCompassBot/.idea
 PoliticalCompassBot/*.log
 PoliticalCompassBot/*.iml

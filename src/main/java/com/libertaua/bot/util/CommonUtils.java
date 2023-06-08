@@ -15,6 +15,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.logging.Level;
@@ -41,7 +42,8 @@ public class CommonUtils {
     private InputStream ideologiesFile = getResource("ideologies.json");
 
     @Getter
-    private InputStream greetingFile = getResource("greeting.txt");
+    private String greeting;
+
     @Getter
     private String devChatId = "@seaeagle_dt";
 
@@ -53,15 +55,24 @@ public class CommonUtils {
     public void setImageUtils(ImageUtils imageUtils) {
         this.imageUtils = imageUtils;
     }
+
     @Autowired
     public void setObjectMapper(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
+
     @Autowired
     public void setDbManager(DBManager dbManager) {
         this.dbManager = dbManager;
     }
 
+    public CommonUtils() {
+        try {
+            greeting = new String(getResource("greeting.txt").readAllBytes(), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     private InputStream getResource(String name) {
         return CommonUtils.class.getClassLoader().getResourceAsStream(name);
@@ -70,17 +81,19 @@ public class CommonUtils {
     /**
      * Method that converts a Pair of integers (result) in string for
      * DB 'results' in format '(a,b)'
+     *
      * @param results Input Pair<Integer, Integer> of result
-     * @return        String in format '(a,b)' where a = pair.first, b = pair.second
+     * @return String in format '(a,b)' where a = pair.first, b = pair.second
      */
-    public String resultsToString(Pair<Double, Double> results){
+    public String resultsToString(Pair<Double, Double> results) {
         return results.first.toString() +
                 "," +
                 results.second.toString();
     }
-    public Pair<Double, Double> resultsToPair(String str){
+
+    public Pair<Double, Double> resultsToPair(String str) {
         String x = str.substring(0, str.indexOf(','));
-        String y = str.substring(str.indexOf(',')+1);
+        String y = str.substring(str.indexOf(',') + 1);
         return new Pair<>(Double.parseDouble(x), Double.parseDouble(y));
     }
 
@@ -90,12 +103,13 @@ public class CommonUtils {
      * I avoided just making a static class because Sanya Balashov said it is anti-pattern and i trusted him
      */
     @PostConstruct
-    public void initializeUtils(){
+    public void initializeUtils() {
         try {
             //Reading a json an deserializing questions
             questionList = objectMapper.readValue(
                     questionsFile,
-                    new TypeReference<>(){}
+                    new TypeReference<>() {
+                    }
             );
             ideologiesList = objectMapper.readValue(
                     ideologiesFile,
@@ -111,24 +125,24 @@ public class CommonUtils {
 
         LAST_QUESTION = (long) questionList.size();
         Logger.getLogger("Initializer").log(Level.INFO, "Loaded " + LAST_QUESTION + " questions, uploaded to DB");
-        for (Question question : questionList){
+        for (Question question : questionList) {
             if (question.getAxe() == Axe.POLITICAL) MAX_SCORE_POLI += 2;
             else MAX_SCORE_ECON += 2;
         }
-
 
 
     }
 
     /**
      * A method that takes one dot and returns list of 4 ideologies, nearest to that dot
+     *
      * @param dot A Pair of doubles - result dot on coordinates
      * @return Array List of 4 ideologies
      */
-    public ArrayList<Ideology> getNearestDots(Pair<Double, Double> dot){
+    public ArrayList<Ideology> getNearestDots(Pair<Double, Double> dot) {
         ArrayList<Ideology> result = new ArrayList<>();
         ArrayList<Pair<Integer, Double>> distance = new ArrayList<>();
-        for (int i = 0; i < ideologiesList.size(); i++){
+        for (int i = 0; i < ideologiesList.size(); i++) {
             distance.add(new Pair<>(i, getDistance(dot, ideologiesList.get(i))));
         }
         distance.sort(Comparator.comparing(a -> a.second));
@@ -145,16 +159,16 @@ public class CommonUtils {
     /**
      * Method to return ArrayList with N zeros (N = number of questions)
      * Used in new TelegramUser initialization for 'answers' DB field
+     *
      * @return Returns ArrayList<Integer> full of zeros
      */
-    public ArrayList<Integer> getEmptyList(){
+    public ArrayList<Integer> getEmptyList() {
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < LAST_QUESTION; i++){
+        for (int i = 0; i < LAST_QUESTION; i++) {
             list.add(0);
         }
         return list;
     }
-
 
 
 }

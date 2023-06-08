@@ -65,14 +65,9 @@ public class TelegramOutputService {
      * @param chatId End user chat id
      */
     public void printGreeting(String chatId) {
-        String greeting = "Ой-йой сталася дурня, зачекайте трошки...";
-        try {
-            greeting = new String(utils.getGreetingFile().readAllBytes(), StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        String greeting;
+        greeting = utils.getGreeting();
         printWithMarkup(greeting, chatId, startQuizMarkup());
-
     }
 
 
