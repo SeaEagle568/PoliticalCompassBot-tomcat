@@ -115,11 +115,11 @@ public class QuizController {
         );
         updateResults(currentUser, finalResults);
         output.sendCompass(currentUser.getChatId(),
-                imageUtils.getResultsImage(imageUtils.getUserPic(currentUser), finalResults, trueCompass),
+                imageUtils.getResultsImage(currentUser.getUserId(), imageUtils.getUserPic(currentUser), finalResults, trueCompass),
                 trueCompass ? null : "Такі координати визначив компас. Куди рухатись далі — обираєте ви."
                 );
         if (!trueCompass) {
-            output.sendAchievments(currentUser.getChatId(), imageUtils.getAchievment(finalResults, allZeros));
+            output.sendAchievments(currentUser.getChatId(), imageUtils.getAchievment(currentUser.getUserId(), finalResults, allZeros));
         }
 
         dbManager.saveUser(currentUser);

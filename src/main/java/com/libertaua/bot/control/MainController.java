@@ -81,7 +81,6 @@ public class MainController {
                 String.valueOf(message.getFrom().getId()),
                 message.getText()
         );
-
         if (Boolean.TRUE.equals(currentUser.getBroadcasting())) {
             broadcastService.broadcast(currentUser, message);
             return;

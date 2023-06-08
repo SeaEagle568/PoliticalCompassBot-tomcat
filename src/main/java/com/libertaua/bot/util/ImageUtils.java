@@ -1,5 +1,6 @@
 package com.libertaua.bot.util;
 
+import com.libertaua.PoliticalCompassBot;
 import com.libertaua.bot.Bot;
 import com.libertaua.bot.entities.TelegramUser;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +22,13 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Paths;
+import java.util.*;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Class that is responsible for all operations with images
@@ -51,7 +54,6 @@ public class ImageUtils {
 
     private Bot bot;
     @Autowired
-    @Lazy
     public void setBot(Bot bot) {
         this.bot = bot;
     }
@@ -86,6 +88,10 @@ public class ImageUtils {
     }
 
     private File getResource(String name) {
+        String protocol = PoliticalCompassBot.class.getResource("PoliticalCompassBot.class").getProtocol();
+        if (protocol.equals("jar")) {
+            return new File(new File(".") + "/resources/BOOT-INF/classes/" + name);
+        }
         try {
             return new File(ImageUtils.class.getClassLoader().getResource(name).toURI());
         } catch (URISyntaxException e) {
@@ -111,7 +117,7 @@ public class ImageUtils {
      * @param allZeros boolean if all answers were 0
      * @return ordered pair of Image file and ID
      */
-    public Pair<File, Integer> getAchievment(Pair<Double, Double> finalResults, boolean allZeros){
+    public Pair<File, Integer> getAchievment(String id, Pair<Double, Double> finalResults, boolean allZeros){
         BufferedImage achievment = null;
         Integer resultType = null;
         if (finalResults.first.intValue() == 100 && finalResults.second.intValue() == 100){
@@ -139,7 +145,8 @@ public class ImageUtils {
             resultType = 5;
         }
         else return null;
-        File tempFile = new File("tempImage.png");
+        File tempFile = new File(id + "/tempImage.png");
+        tempFile.getParentFile().mkdirs();
         try {
             ImageIO.write(achievment, "png", tempFile);
         } catch (IOException e) {
@@ -154,7 +161,7 @@ public class ImageUtils {
      * @param finalResults Pair<Double, Double> coordinates from (0,0) to (100, 100) representing results
      * @return             A temporary file with resulting image
      */
-    public File getResultsImage(BufferedImage userPic, Pair<Double, Double> finalResults, boolean trueCompass) {
+    public File getResultsImage(String id, BufferedImage userPic, Pair<Double, Double> finalResults, boolean trueCompass) {
         BufferedImage finalCompass;
         finalResults.first -= 50;
         finalResults.second -= 50;
@@ -189,7 +196,8 @@ public class ImageUtils {
         finalResults.first += 50;
         finalResults.second += 50;
         //Creating a temp file and saving result there
-        File tempFile = new File("tempImage.png");
+        File tempFile = new File(id + "/tempImage.png");
+        tempFile.getParentFile().mkdirs();
         try {
             ImageIO.write(finalCompass, "png", tempFile);
         } catch (IOException e) {

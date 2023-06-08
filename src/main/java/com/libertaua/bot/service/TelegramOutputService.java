@@ -26,6 +26,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -54,7 +55,6 @@ public class TelegramOutputService {
         this.utils = utils;
     }
     @Autowired
-    @Lazy
     public void setBot(Bot bot) {
         this.bot = bot;
     }
@@ -67,9 +67,7 @@ public class TelegramOutputService {
     public void printGreeting(String chatId) {
         String greeting = "Ой-йой сталася дурня, зачекайте трошки...";
         try {
-            greeting = Files.readString(
-                    Path.of(utils.getGreetingFile())
-            );
+            greeting = new String(utils.getGreetingFile().readAllBytes(), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -192,7 +190,8 @@ public class TelegramOutputService {
      */
     public void sendImage(String chatId, String message, File image, boolean asFile){
         if (asFile){
-            sendFile(chatId, message, image);
+            Thread thread = new Thread(() -> sendFile(chatId, message, image));
+            thread.start();
             return;
         }
         SendPhoto photo = new SendPhoto();

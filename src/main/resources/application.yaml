@@ -9,7 +9,12 @@ bot:
     social-url: "https://docs.google.com/forms/d/e/1FAIpQLSfaHGyZ_gWNPMl0JMDPjLRvXdRorHadNAJSXEglSmGGu1G95A/viewform?usp=pp_url&entry.1626607362="
     ideologies: "ideologies.json"
 
+
 spring:
+  main:
+    allow-circular-references: true
+  aop:
+    proxy-target-class: false
   datasource:
     url: jdbc:postgresql://localhost/polcompbot
     username: postgres

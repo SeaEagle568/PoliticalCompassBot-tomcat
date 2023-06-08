@@ -13,6 +13,7 @@ import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -36,11 +37,11 @@ public class CommonUtils {
     public int MAX_SCORE_ECON = 0;
     public int MAX_SCORE_POLI = 0;
 
-    private String questionsFile = getResource("questions.json").getPath();
-    private String ideologiesFile = getResource("ideologies.json").getPath();
+    private InputStream questionsFile = getResource("questions.json");
+    private InputStream ideologiesFile = getResource("ideologies.json");
 
     @Getter
-    private String greetingFile = getResource("greeting.txt").getPath();
+    private InputStream greetingFile = getResource("greeting.txt");
     @Getter
     private String devChatId = "@seaeagle_dt";
 
@@ -62,12 +63,8 @@ public class CommonUtils {
     }
 
 
-    private File getResource(String name) {
-        try {
-            return new File(CommonUtils.class.getClassLoader().getResource(name).toURI());
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
+    private InputStream getResource(String name) {
+        return CommonUtils.class.getClassLoader().getResourceAsStream(name);
     }
 
     /**
@@ -97,11 +94,11 @@ public class CommonUtils {
         try {
             //Reading a json an deserializing questions
             questionList = objectMapper.readValue(
-                    new FileReader(questionsFile),
+                    questionsFile,
                     new TypeReference<>(){}
             );
             ideologiesList = objectMapper.readValue(
-                    new FileReader(ideologiesFile),
+                    ideologiesFile,
                     new TypeReference<>() {
                     }
             );
